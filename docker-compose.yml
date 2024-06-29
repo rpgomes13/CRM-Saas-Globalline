@@ -1,0 +1,45 @@
+version: '3.9'
+services:
+  frontend:
+    container_name: frontend
+    image: frontend
+    build:
+      context: ./frontend
+      dockerfile: frontend.dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      - NEXT_PUBLIC_API_URL=http://187.75.245.69:8000
+    restart: always 
+    depends_on:
+      - backend
+  backend:
+    container_name: backend
+    image: backend
+    build: 
+      context: ./backend
+      dockerfile: backend.dockerfile
+    ports:
+      - 8000:8000
+    environment:
+      - DB_TYPE=postgres
+      - PG_HOST=db 
+      - PG_USER=globalline
+      - PG_PASSWORD=20Global10
+      - PG_DB=globalline
+      - PG_PORT=5432
+    depends_on:
+      - db
+  db:
+    container_name: db
+    image: postgres:12
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=globalline
+      - POSTGRES_PASSWORD=20Global10
+      - POSTGRES_DB=globalline
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata: {}
