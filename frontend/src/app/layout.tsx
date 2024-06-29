@@ -6,7 +6,7 @@ import "@/css/style.css";
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import AuthProvider, { useAuth } from '@/providers/NextAuthContext';
-import Loader from '@/components/common/Loader';
+import Loader from './components/common/Loader';
 
 const RootLayoutContent = ({ children }: { children: React.ReactNode }) => {
  // const [loading, setLoading] = useState<boolean>(true);
