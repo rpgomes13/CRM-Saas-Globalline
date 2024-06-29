@@ -5,11 +5,11 @@ import Image from "next/image";
 import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
+import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb";
 import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import DefaultLayout from "../../components/Layouts/DefaultLayout";
 import { useAuth } from "@/providers/NextAuthContext"; 
-import ECommerce from '@/components/Dashboard/E-commerce';
+import ECommerce from '../../components/Dashboard/E-commerce';
 
 const SignIn: React.FC = () => {
   const router = useRouter();
