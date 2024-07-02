@@ -1,6 +1,7 @@
-import { Body, Controller, Get, Post, UnauthorizedException, Headers } from '@nestjs/common';
+import { Body, Controller, Get, Post, UnauthorizedException, Headers, UseGuards, Request } from '@nestjs/common';
 import { LoginDto } from './login.dto';
 import { AuthService } from './auth.service';
+import { RefreshJwtGuard } from './refresh.guard';
 
 @Controller('auth')
 export class AuthController {
@@ -11,6 +12,7 @@ export class AuthController {
     return this.authService.login(data);
   }
 
+  /* função old
   @Get('check-auth')
   async checkAuth(@Headers('Authorization') authorization: string) {
     const token = authorization.split(' ')[1];
@@ -20,5 +22,11 @@ export class AuthController {
     } else {
       throw new UnauthorizedException('Invalid or expired token');
     }
+  } */
+  
+  @UseGuards(RefreshJwtGuard)
+  @Post('refresh')
+  async refreshToken(@Request() req) {
+    return await this.authService.refreshToken(req.user)
   }
 }

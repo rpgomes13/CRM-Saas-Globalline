@@ -89,11 +89,25 @@ If you like the template, please star this repository to inspire the team to cre
 
 ## Update Logs
 
+### Version 1.3.3 - [June 20, 2024]
+
+#### Issues
+
+- **Issues 01:** Fixed Not building when Loader component removed
+
+### Version 1.3.2 - [June 19, 2024]
+
+#### Enhancements
+
+- **Enhancement 01:** Add ClickOutside Component for reduce repeated functionality in Header Message, Notification and User Dropdowns
+- **Enhancement 02:** Remove Repeated code from Sidebar Menu and Refactor Sidebar Components
+- **Enhancement 03:** Update Jsvectormap Package and it's imports for latest changes
+
 ### Version 1.3.1 - [Feb 12, 2024]
 
 #### Issues
 
-- **Issues 02:** Fix Misspelling issue [Default Layout/Layouts].
+- **Issues 01:** Fix Misspelling issue [Default Layout/Layouts].
 
 #### Enhancements
 - **Enhancement 01:** Update style.css
@@ -112,4 +126,3 @@ If you like the template, please star this repository to inspire the team to cre
 ### Version 0.1.0 - Initial Release - [Aug 3, 2023]
 
 - Initial release of TailAdmin Next.
-teste22

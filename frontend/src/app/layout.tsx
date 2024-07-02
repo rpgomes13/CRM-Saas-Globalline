@@ -1,41 +1,62 @@
-'use client';
-import "jsvectormap/dist/css/jsvectormap.css";
+"use client";
+import "jsvectormap/dist/jsvectormap.css";
 import "flatpickr/dist/flatpickr.min.css";
 import "@/css/satoshi.css";
 import "@/css/style.css";
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import AuthProvider, { useAuth } from '@/providers/NextAuthContext';
-import Loader from './components/common/Loader';
+import React, { useEffect, useState } from "react";
+import Loader from "@/components/common/Loader";
+import Providers from "@/components/Providers";
+import AppBar from "@/components/AppBar";
+import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import ECommerce from "@/components/Dashboard/E-commerce";
+import { useSession } from "next-auth/react";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
+//import { authOptions } from "./api/auth/[...nextauth]/route";
 
-const RootLayoutContent = ({ children }: { children: React.ReactNode }) => {
- // const [loading, setLoading] = useState<boolean>(true);
-  const { user, loading } = useAuth();
-  const router = useRouter();
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [loading, setLoading] = useState<boolean>(true);
+ // const { data: session, status } = useSession();
+  // const pathname = usePathname();
 
   useEffect(() => {
-    if (!loading && !user) {
-      router.push('/auth/signin');
-    }
-  }, [user, loading, router]);
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
 
-  if (loading) {
-    return <Loader />;
-  }
+  //const session = await getServerSession(authOptions);
+  //console.log(session, "SESSION")
 
-  return <div className="dark:bg-boxdark-2 dark:text-bodydark">{children}</div>;
-};
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+  // if(status === 'loading'){
+  //   return <Loader />
+  // }
+
+    // if(!session) {
+    //    return (
+    //     <Providers>
+    //       <AppBar />
+    //     </Providers>
+    //   )
+    // }
+ 
+/*   const session = await getServerSession();
+  if(!session) {
+    redirect("/login")
+  } */
+ // console.log(session)
   return (
-    <AuthProvider>
-      <html lang="en">
-        <body suppressHydrationWarning={true}>
-          <RootLayoutContent>{children}</RootLayoutContent>
-        </body>
-      </html>
-    </AuthProvider>
-  );
-};
+    <html lang="en">
+      <body suppressHydrationWarning={true}>
+          <Providers> 
+            {children}
+          </Providers> 
+      </body>
 
-export default RootLayout;
+    </html>
+  );
+}
