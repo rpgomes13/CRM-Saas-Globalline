@@ -1,11 +1,11 @@
-"use client";
+/*"use client";
 import jsVectorMap from "jsvectormap";
-//import "jsvectormap/dist/css/jsvectormap.css";
+import "jsvectormap/dist/jsvectormap.css";
 import React, { useEffect } from "react";
-//import "../../js/us-aea-en";
+import "../../js/us-aea-en";
 
 const MapOne: React.FC = () => {
-/*  useEffect(() => {
+  useEffect(() => {
     const mapOne = new jsVectorMap({
       selector: "#mapOne",
       map: "us_aea_en",
@@ -43,7 +43,7 @@ const MapOne: React.FC = () => {
     return () => {
       mapOne.destroy();
     };
-  }, []);*/
+  }, []);
 
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-7">
@@ -57,4 +57,4 @@ const MapOne: React.FC = () => {
   );
 };
 
-export default MapOne;
+export default MapOne; */

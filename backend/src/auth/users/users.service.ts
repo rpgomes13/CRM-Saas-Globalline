@@ -31,8 +31,28 @@ export class UsersService {
   generateHash(password: string) {
     return bcrypt.hashSync(password, 10);
   }
-
-  findOne(idOrEmail: number | string) {
+  findByEmail(username: string) {
+    if (!username) {
+      throw new Error("Email must be provided");
+    }
+    return this.prismaService.user.findUnique({
+      where: {
+        email: username 
+      },
+    });
+  }
+  async findByIdd(id: number) {
+    //const idNumber = parseInt(id, 10);
+    return await this.prismaService.user.findUnique({
+      where: {
+        id: id
+       /* ...(typeof id === 'number'
+          ? { id: id }
+          : { email: id }),*/
+      },
+    })
+  }
+ /*findOne(idOrEmail: number | string) {
     return this.prismaService.user.findFirst({
       where: {
         ...(typeof idOrEmail === 'number'
@@ -40,5 +60,19 @@ export class UsersService {
           : { email: idOrEmail }),
       },
     });
-  }
+  } */
+    async findById(id: string) { // Function now accepts a string 'id'
+      // Convert the string ID to a number using parseInt with radix (base 10)
+      const numericId = parseInt(id, 10);
+    
+      // Check if conversion was successful (returns NaN for non-numeric strings)
+      if (isNaN(numericId)) {
+        throw new Error('Invalid user ID format. Please provide a valid numeric ID.');
+      }
+    
+      // Use the converted numeric ID for the Prisma query
+      return await this.prismaService.user.findUnique({
+        where: { id: numericId },
+      });
+    }
 }
