@@ -31,13 +31,13 @@ export class UsersService {
   generateHash(password: string) {
     return bcrypt.hashSync(password, 10);
   }
-  findByEmail(username: string) {
-    if (!username) {
+  findByEmail(email: string) {
+    if (!email) {
       throw new Error("Email must be provided");
     }
     return this.prismaService.user.findUnique({
       where: {
-        email: username 
+        email: email 
       },
     });
   }

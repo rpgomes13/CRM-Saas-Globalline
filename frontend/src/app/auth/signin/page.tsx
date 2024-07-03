@@ -11,12 +11,12 @@ const SignInForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const username = form.username.value;
+    const email = form.email.value;
     const password = form.password.value;
 
     const result = await signIn('credentials', {
       redirect: false,
-      username,
+      email,
       password,
     });
 
@@ -38,10 +38,10 @@ const SignInForm: React.FC = () => {
             Username
           </label>
           <input
-            id="username"
-            name="username"
+            id="email"
+            name="email"
             type="text"
-            placeholder="Enter your username"
+            placeholder="Enter your email"
             required
             className="w-full rounded border border-stroke py-2.5 px-4 dark:border-strokedark"
           />
