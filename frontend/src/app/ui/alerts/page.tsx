@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const Alerts = () => {
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="Alerts" />
+      <Breadcrumb pageName="Alertas" />
 
       <div className="rounded-sm border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-9">
         <div className="flex flex-col gap-7.5">
@@ -34,7 +34,7 @@ const Alerts = () => {
             </div>
             <div className="w-full">
               <h5 className="mb-3 text-lg font-semibold text-[#9D5425]">
-                Attention needed
+              Atenção necessária
               </h5>
               <p className="leading-relaxed text-[#D0915C]">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -62,7 +62,7 @@ const Alerts = () => {
             </div>
             <div className="w-full">
               <h5 className="mb-3 text-lg font-semibold text-black dark:text-[#34D399] ">
-                Message Sent Successfully
+              Mensagem enviada com sucesso
               </h5>
               <p className="text-base leading-relaxed text-body">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -89,7 +89,7 @@ const Alerts = () => {
             </div>
             <div className="w-full">
               <h5 className="mb-3 font-semibold text-[#B45454]">
-                There were 1 errors with your submission
+              Houve 1 erro no seu envio
               </h5>
               <ul>
                 <li className="leading-relaxed text-[#CD5D5D]">

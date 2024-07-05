@@ -32,7 +32,7 @@ const CheckboxFour = () => {
             </span>
           </div>
         </div>
-        Checkbox Text
+        Texto da caixa de seleção
       </label>
     </div>
   );

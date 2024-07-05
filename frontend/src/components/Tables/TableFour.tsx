@@ -52,7 +52,7 @@ const TableFour: React.FC = () => {
         <div className="mb-6 flex justify-between">
           <div>
             <h4 className="text-title-sm2 font-bold text-black dark:text-white">
-              Top Channels
+              Principais Parceiros
             </h4>
           </div>
           <DropdownDefault />
@@ -62,22 +62,22 @@ const TableFour: React.FC = () => {
           <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-4">
             <div className="p-2.5 xl:p-4">
               <h5 className="text-sm font-medium uppercase xsm:text-base">
-                Source
+                Total Agentes
               </h5>
             </div>
             <div className="p-2.5 text-center xl:p-4">
               <h5 className="text-sm font-medium uppercase xsm:text-base">
-                Visitors
+               Total Visitantes
               </h5>
             </div>
             <div className="p-2.5 text-center xl:p-4">
               <h5 className="text-sm font-medium uppercase xsm:text-base">
-                Revenues
+                Receitas
               </h5>
             </div>
             <div className="hidden p-2.5 text-center sm:block xl:p-4">
               <h5 className="text-sm font-medium uppercase xsm:text-base">
-                Conversion
+                Conversão
               </h5>
             </div>
           </div>

@@ -46,7 +46,7 @@ const DropdownNotification = () => {
           >
             <div className="px-4.5 py-3">
               <h5 className="text-sm font-medium text-bodydark2">
-                Notification
+                Notificação
               </h5>
             </div>
 
@@ -58,13 +58,13 @@ const DropdownNotification = () => {
                 >
                   <p className="text-sm">
                     <span className="text-black dark:text-white">
-                      Edit your information in a swipe
+                      Edite suas informações com um toque
                     </span>{" "}
                     Sint occaecat cupidatat non proident, sunt in culpa qui
                     officia deserunt mollit anim.
                   </p>
 
-                  <p className="text-xs">12 May, 2025</p>
+                  <p className="text-xs">12 Maio, 2024</p>
                 </Link>
               </li>
               <li>
@@ -74,12 +74,12 @@ const DropdownNotification = () => {
                 >
                   <p className="text-sm">
                     <span className="text-black dark:text-white">
-                      It is a long established fact
+                      Agente recebeu nota 5
                     </span>{" "}
-                    that a reader will be distracted by the readable.
+                    Agente 0102 Alcançou maior nota
                   </p>
 
-                  <p className="text-xs">24 Feb, 2025</p>
+                  <p className="text-xs">24 Fevereiro, 2024</p>
                 </Link>
               </li>
               <li>
@@ -89,13 +89,12 @@ const DropdownNotification = () => {
                 >
                   <p className="text-sm">
                     <span className="text-black dark:text-white">
-                      There are many variations
+                    Agente recebeu nota 5
                     </span>{" "}
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
+                    Agente 0102 Alcançou maior nota
                   </p>
 
-                  <p className="text-xs">04 Jan, 2025</p>
+                  <p className="text-xs">04 Janeiro, 2024</p>
                 </Link>
               </li>
               <li>
@@ -105,13 +104,12 @@ const DropdownNotification = () => {
                 >
                   <p className="text-sm">
                     <span className="text-black dark:text-white">
-                      There are many variations
+                      Total de 20 ligações foram recebidas  
                     </span>{" "}
-                    of passages of Lorem Ipsum available, but the majority have
-                    suffered
+                    Nota média 4.5 por cada agente
                   </p>
 
-                  <p className="text-xs">01 Dec, 2024</p>
+                  <p className="text-xs">01 Dezembro, 2023</p>
                 </Link>
               </li>
             </ul>

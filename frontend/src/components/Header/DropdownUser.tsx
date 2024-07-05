@@ -2,10 +2,11 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ClickOutside from "@/components/ClickOutside";
+import { useSession } from "next-auth/react";
 
 const DropdownUser = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
+  const { data: session } = useSession()
   return (
     <ClickOutside onClick={() => setDropdownOpen(false)} className="relative">
       <Link
@@ -15,9 +16,11 @@ const DropdownUser = () => {
       >
         <span className="hidden text-right lg:block">
           <span className="block text-sm font-medium text-black dark:text-white">
-            Thomas Anree
+          {session?.user?.name ? session.user.name : " "}
           </span>
-          <span className="block text-xs">UX Designer</span>
+          {/* <span className="block text-xs">Bem vindo Global Line{session?.user.roles?.[0] ? session?.user.roles?.[0] : " "}</span> */}
+            <span className="block text-xs">Bem vindo Global Line</span> 
+       
         </span>
 
         <span className="h-12 w-12 rounded-full">
@@ -78,7 +81,7 @@ const DropdownUser = () => {
                     fill=""
                   />
                 </svg>
-                My Profile
+                Meu Perfil
               </Link>
             </li>
             <li>
@@ -99,7 +102,7 @@ const DropdownUser = () => {
                     fill=""
                   />
                 </svg>
-                My Contacts
+                Meus Contatos
               </Link>
             </li>
             <li>
@@ -124,7 +127,7 @@ const DropdownUser = () => {
                     fill=""
                   />
                 </svg>
-                Account Settings
+                Configurações de Conta
               </Link>
             </li>
           </ul>
@@ -146,7 +149,7 @@ const DropdownUser = () => {
                 fill=""
               />
             </svg>
-            Log Out
+            Sair-
           </button>
         </div>
       )}
