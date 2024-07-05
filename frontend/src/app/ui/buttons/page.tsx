@@ -12,13 +12,13 @@ export const metadata: Metadata = {
 const Buttons = () => {
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="Buttons" />
+      <Breadcrumb pageName="Botões" />
 
       {/* <!-- Normal Button Items --> */}
       <div className="mb-10 rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="border-b border-stroke px-7 py-4 dark:border-strokedark">
           <h3 className="font-medium text-black dark:text-white">
-            Normal Button
+            Botão Normal 
           </h3>
         </div>
 
@@ -28,28 +28,28 @@ const Buttons = () => {
               href="#"
               className="inline-flex items-center justify-center bg-primary px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-full bg-primary px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-md border border-primary px-10 py-4 text-center font-medium text-primary hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
           </div>
 
@@ -58,28 +58,28 @@ const Buttons = () => {
               href="#"
               className="inline-flex items-center justify-center bg-meta-3 px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-md bg-meta-3 px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-full bg-meta-3 px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-md border border-meta-3 px-10 py-4 text-center font-medium text-meta-3 hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
           </div>
 
@@ -88,28 +88,28 @@ const Buttons = () => {
               href="#"
               className="inline-flex items-center justify-center bg-black px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-md bg-black px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-full bg-black px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
 
             <Link
               href="#"
               className="inline-flex items-center justify-center rounded-md border border-black px-10 py-4 text-center font-medium text-black hover:bg-opacity-90 lg:px-8 xl:px-10"
             >
-              Button
+              Botão
             </Link>
           </div>
         </div>
@@ -119,7 +119,7 @@ const Buttons = () => {
       <div className="mb-10 rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="border-b border-stroke px-7 py-4 dark:border-strokedark">
           <h3 className="font-medium text-black dark:text-white">
-            Button With Icon
+          Botão com ícone
           </h3>
         </div>
 
@@ -148,7 +148,7 @@ const Buttons = () => {
                   />
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -174,7 +174,7 @@ const Buttons = () => {
                   />
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -200,7 +200,7 @@ const Buttons = () => {
                   />
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -226,7 +226,7 @@ const Buttons = () => {
                   />
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
           </div>
 
@@ -258,7 +258,7 @@ const Buttons = () => {
                   />
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -288,7 +288,7 @@ const Buttons = () => {
                   />
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -318,7 +318,7 @@ const Buttons = () => {
                   />
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -348,7 +348,7 @@ const Buttons = () => {
                   />
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
           </div>
 
@@ -379,7 +379,7 @@ const Buttons = () => {
                   </defs>
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -408,7 +408,7 @@ const Buttons = () => {
                   </defs>
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -437,7 +437,7 @@ const Buttons = () => {
                   </defs>
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
 
             <Link
@@ -466,7 +466,7 @@ const Buttons = () => {
                   </defs>
                 </svg>
               </span>
-              Button With Icon
+              Botão com ícone
             </Link>
           </div>
         </div>

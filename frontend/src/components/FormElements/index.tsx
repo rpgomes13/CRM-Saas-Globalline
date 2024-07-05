@@ -17,7 +17,7 @@ import SelectGroupTwo from "@/components/SelectGroup/SelectGroupTwo";
 const FormElements = () => {
   return (
     <>
-      <Breadcrumb pageName="FormElements" />
+      <Breadcrumb pageName="Elementos Formulário" />
 
       <div className="grid grid-cols-1 gap-9 sm:grid-cols-2">
         <div className="flex flex-col gap-9">
@@ -25,39 +25,39 @@ const FormElements = () => {
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                Input Fields
+              Campos de entrada
               </h3>
             </div>
             <div className="flex flex-col gap-5.5 p-6.5">
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Default Input
+                Entrada padrão
                 </label>
                 <input
                   type="text"
-                  placeholder="Default Input"
+                  placeholder="Entrada padrão"
                   className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                 />
               </div>
 
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Active Input
+                  Entrada ativa
                 </label>
                 <input
                   type="text"
-                  placeholder="Active Input"
+                  placeholder="Entrada ativa"
                   className="w-full rounded-lg border-[1.5px] border-primary bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:bg-form-input dark:text-white"
                 />
               </div>
 
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Disabled label
+                Rótulo desativado
                 </label>
                 <input
                   type="text"
-                  placeholder="Disabled label"
+                  placeholder="Rótulo desativado"
                   disabled
                   className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary dark:disabled:bg-black"
                 />
@@ -69,7 +69,7 @@ const FormElements = () => {
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                Toggle switch input
+                Alternar entrada do input
               </h3>
             </div>
             <div className="flex flex-col gap-5.5 p-6.5">
@@ -84,7 +84,7 @@ const FormElements = () => {
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                Time and date
+              Hora e data
               </h3>
             </div>
             <div className="flex flex-col gap-5.5 p-6.5">
@@ -103,7 +103,7 @@ const FormElements = () => {
             <div className="flex flex-col gap-5.5 p-6.5">
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Attach file
+                Anexar arquivo
                 </label>
                 <input
                   type="file"
@@ -113,7 +113,7 @@ const FormElements = () => {
 
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Attach file
+                Anexar arquivo
                 </label>
                 <input
                   type="file"
@@ -129,40 +129,40 @@ const FormElements = () => {
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                Textarea Fields
+              Campos de área de texto
               </h3>
             </div>
             <div className="flex flex-col gap-5.5 p-6.5">
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Default textarea
+                Área de texto padrão
                 </label>
                 <textarea
                   rows={6}
-                  placeholder="Default textarea"
+                  placeholder="Área de texto padrão"
                   className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                 ></textarea>
               </div>
 
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Active textarea
+                Área de texto ativa
                 </label>
                 <textarea
                   rows={6}
-                  placeholder="Active textarea"
+                  placeholder="Área de texto ativa"
                   className="w-full rounded-lg border-[1.5px] border-primary bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:bg-form-input dark:text-white"
                 ></textarea>
               </div>
 
               <div>
                 <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-                  Disabled textarea
+                Área de texto desativada
                 </label>
                 <textarea
                   rows={6}
                   disabled
-                  placeholder="Disabled textarea"
+                  placeholder="Área de texto desativada"
                   className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary dark:disabled:bg-black"
                 ></textarea>
               </div>
@@ -173,7 +173,7 @@ const FormElements = () => {
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                Checkbox and radio
+              Caixa de seleção e rádio
               </h3>
             </div>
             <div className="flex flex-col gap-5.5 p-6.5">
@@ -189,7 +189,7 @@ const FormElements = () => {
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
-                Select input
+              Selecione a entrada
               </h3>
             </div>
             <div className="flex flex-col gap-5.5 p-6.5">

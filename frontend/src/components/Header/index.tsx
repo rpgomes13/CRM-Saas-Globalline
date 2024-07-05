@@ -58,9 +58,9 @@ const Header = (props: {
 
           <Link className="block flex-shrink-0 lg:hidden" href="/">
             <Image
-              width={32}
-              height={32}
-              src={"/images/logo/logo-icon.svg"}
+              width={42}
+              height={42}
+              src={"/images/logo/globalline.png"}
               alt="Logo"
             />
           </Link>
@@ -95,7 +95,7 @@ const Header = (props: {
 
               <input
                 type="text"
-                placeholder="Type to search..."
+                placeholder="Escreva para pesquisar..."
                 className="w-full bg-transparent pl-9 pr-4 font-medium focus:outline-none xl:w-125"
               />
             </div>

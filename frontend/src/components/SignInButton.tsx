@@ -30,7 +30,7 @@ const SignInForm: React.FC = () => {
   return (
     <div className="p-8 sm:p-12.5 lg:p-17.5">
       <h2 className="mb-9 text-2xl font-bold text-black dark:text-white sm:text-title-xl2">
-        Sign In
+        Entrar
       </h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-5.5">

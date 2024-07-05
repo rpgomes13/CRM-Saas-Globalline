@@ -2,28 +2,24 @@ import { Package } from "@/types/package";
 
 const packageData: Package[] = [
   {
-    name: "Free package",
-    price: 0.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Mariya Desoja",
+    invoiceDate: "mariya@gmail.com",
+    status: "Disponível",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Robert Jhon",
+    invoiceDate: "robert@gmail.com",
+    status: "Indisponível",
   },
   {
-    name: "Business Package",
-    price: 99.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Unpaid",
+    name: "Henry Dholi",
+    invoiceDate: "henry@gmail.com",
+    status: "Em Pausa",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Pending",
+    name: "Cody Fisher",
+    invoiceDate: "cody@gmail.com",
+    status: "Pendente",
   },
 ];
 
@@ -31,20 +27,25 @@ const TableThree = () => {
   return (
     <div className="rounded-sm border border-stroke bg-white px-5 pb-2.5 pt-6 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
       <div className="max-w-full overflow-x-auto">
+      <div className="px-3 py-4 md:px-4 xl:px-7.5">
+        <h4 className="text-xl font-semibold text-black dark:text-white">
+          Editar Agente 
+        </h4>
+      </div>
         <table className="w-full table-auto">
           <thead>
             <tr className="bg-gray-2 text-left dark:bg-meta-4">
               <th className="min-w-[220px] px-4 py-4 font-medium text-black dark:text-white xl:pl-11">
-                Package
+                Agente
               </th>
               <th className="min-w-[150px] px-4 py-4 font-medium text-black dark:text-white">
-                Invoice date
+                Email
               </th>
               <th className="min-w-[120px] px-4 py-4 font-medium text-black dark:text-white">
                 Status
               </th>
               <th className="px-4 py-4 font-medium text-black dark:text-white">
-                Actions
+                Ações
               </th>
             </tr>
           </thead>
@@ -55,7 +56,7 @@ const TableThree = () => {
                   <h5 className="font-medium text-black dark:text-white">
                     {packageItem.name}
                   </h5>
-                  <p className="text-sm">${packageItem.price}</p>
+                  {/* <p className="text-sm">${packageItem.price}</p> */}
                 </td>
                 <td className="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
                   <p className="text-black dark:text-white">
@@ -65,9 +66,9 @@ const TableThree = () => {
                 <td className="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
                   <p
                     className={`inline-flex rounded-full bg-opacity-10 px-3 py-1 text-sm font-medium ${
-                      packageItem.status === "Paid"
+                      packageItem.status === "Disponível"
                         ? "bg-success text-success"
-                        : packageItem.status === "Unpaid"
+                        : packageItem.status === "Indisponível"
                           ? "bg-danger text-danger"
                           : "bg-warning text-warning"
                     }`}
@@ -78,23 +79,21 @@ const TableThree = () => {
                 <td className="border-b border-[#eee] px-4 py-5 dark:border-strokedark">
                   <div className="flex items-center space-x-3.5">
                     <button className="hover:text-primary">
-                      <svg
-                        className="fill-current"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8.99981 14.8219C3.43106 14.8219 0.674805 9.50624 0.562305 9.28124C0.47793 9.11249 0.47793 8.88749 0.562305 8.71874C0.674805 8.49374 3.43106 3.20624 8.99981 3.20624C14.5686 3.20624 17.3248 8.49374 17.4373 8.71874C17.5217 8.88749 17.5217 9.11249 17.4373 9.28124C17.3248 9.50624 14.5686 14.8219 8.99981 14.8219ZM1.85605 8.99999C2.4748 10.0406 4.89356 13.5562 8.99981 13.5562C13.1061 13.5562 15.5248 10.0406 16.1436 8.99999C15.5248 7.95936 13.1061 4.44374 8.99981 4.44374C4.89356 4.44374 2.4748 7.95936 1.85605 8.99999Z"
-                          fill=""
-                        />
-                        <path
-                          d="M9 11.3906C7.67812 11.3906 6.60938 10.3219 6.60938 9C6.60938 7.67813 7.67812 6.60938 9 6.60938C10.3219 6.60938 11.3906 7.67813 11.3906 9C11.3906 10.3219 10.3219 11.3906 9 11.3906ZM9 7.875C8.38125 7.875 7.875 8.38125 7.875 9C7.875 9.61875 8.38125 10.125 9 10.125C9.61875 10.125 10.125 9.61875 10.125 9C10.125 8.38125 9.61875 7.875 9 7.875Z"
-                          fill=""
-                        />
-                      </svg>
+                    <svg
+  className="fill-current"
+  width="18"
+  height="18"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M2.99939 21.5002L9.30235 19.4247L4.57512 14.6975L2.49963 21.0004C2.44583 21.1708 2.46203 21.3534 2.54487 21.5115C2.62771 21.6696 2.76909 21.7874 2.9382 21.8427C3.10731 21.898 3.29232 21.8864 3.45487 21.8102C3.61742 21.7341 3.74877 21.5986 3.82101 21.4294L3.99939 21.0002H2.99939ZM20.7061 7.121L17.8787 4.293L20.1714 2.00025L23 4.82867L20.7061 7.121ZM15.4551 5.46563L18.5858 8.59631L8.99962 18.1825L5.86894 15.0519L15.4551 5.46563Z"
+    fill=""
+  />
+</svg>
+
+
                     </button>
                     <button className="hover:text-primary">
                       <svg
